@@ -1,0 +1,20 @@
+<!--pages/theme/theme.wxml-->
+<view>
+  <view class="indexList">
+    <block wx:for="{{appList}}">
+      <block wx:if="{{item.appId != -1}}">
+        <navigator url="../article/article?appId={{item.appId}}">
+          <view class="hotList">
+            <image src="{{root}}{{item.logo}}"></image>
+            <text>{{item.name}}</text>
+          </view>
+        </navigator>
+      </block>
+      <block wx:else>
+        <view class="articlePage">
+          {{item.title}}
+        </view>
+      </block>
+    </block>
+  </view>
+</view>

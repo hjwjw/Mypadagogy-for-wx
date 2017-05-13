@@ -1,0 +1,36 @@
+/* pages/themesList/themesList.wxss */
+
+.theme{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 0px 5px 5px 5px;
+    border-bottom: 1px solid #03a9f4;
+}
+
+.theme image{
+    width: 80px;
+    height: 80px;
+}
+
+.theme_intro{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.theme_intro_tit{
+    font-size: 16px;
+    color: #444;
+}
+.theme_intro_content{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #888888;
+}
+.articlePage{
+    height: 20px;
+    color: #999;
+    font-size: 14px;
+    padding: 10px 0px 0px 5px;
+}

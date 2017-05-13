@@ -1,0 +1,26 @@
+<!--pages/article/article.wxml-->
+<view class="container">
+    <view class="title"><text>{{articleJson.name}}</text></view>
+    <view class="article_info">
+        <text>分类：<block wx:for="{{articleJson.typeName}}"> {{item}}</block></text>
+        <text>作者：{{articleJson.userName}}</text>
+    </view>
+    <view class="articleContent">
+        <view class="news_txt" id="newsContent">
+            <import src="../../wxParse/wxParse.wxml"/>
+            <template is="wxParse" data="{{wxParseData:newbody.nodes}}"/>
+        </view>
+    </view>
+
+    <view class="bottom_bar">
+        <!--<view class="icon_send">
+            <input type="text" class="conmment_input" placeholder="评论..."/>
+            <image src="../../images/icon/send.png" ></image>
+        </view>-->
+        <view class="icon">
+            <image src="../../images/icon/comment.png"></image> 
+            <image src="../../images/icon/{{zanIcon.url}}" bindtap="zan" data-id="zan"></image>
+            <image src="../../images/icon/{{selIcon.url}}" bindtap="selections" data-id="selections" data-articleData="{{articleJson}}"></image>
+        </view>
+    </view>
+</view>

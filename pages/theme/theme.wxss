@@ -1,0 +1,64 @@
+/* pages/theme/theme.wxss */
+
+.swiper image{
+    width: 100%;
+}
+.alt{
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px 15px 10px;
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(153, 153, 153, 0.2)
+}
+.editor_img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-bottom: -5px;  
+}
+.indexList{
+    margin-top: 10px;
+}
+.topicTitle{
+    font-size: 16px;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+.hotList{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    margin-top: 10px;
+    padding: 0px 5px 5px 5px; 
+    border-bottom: 1px solid #03a9f4;
+}
+.hotList2{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    margin-top: 10px;
+    padding: 0px 5px 5px 5px; 
+    border-bottom: 1px solid #03a9f4;
+}
+.hotList image{
+    width:70px;
+    height:60px
+}
+
+.hotList text{
+    width: 75%;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+.articlePage{
+    height: 20px;
+    color: #999;
+    font-size: 14px;
+    padding: 10px 0px 0px 5px;
+}

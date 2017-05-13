@@ -1,0 +1,30 @@
+<!--pages/user/user.wxml-->
+<view class="top">
+    <view class="userLogo_Name">
+        <image src="http://read.html5.qq.com/image?src=forum&q=5&r=0&imgflag=7&imageUrl={{userInfo.avatarUrl}}"></image>
+        <text>{{userInfo.nickName}}</text>
+    </view>
+    <view class="locations">
+        <image src="../../images/icon/location.png"></image>
+        <text>{{location.address}}</text>
+    </view>
+</view>
+<!--<view class="weather">
+    <text>今日天气</text>
+    <view class="weather_info">
+        
+        <text>{{weather.today.city}}  {{weather.today.weather}}  {{weather.today.temperature}}  {{weather.today.wind}}</text>
+    </view>
+</view>-->
+
+<view class="collect">
+    <text>我的收藏</text>
+    <scroll-view scroll-y="true" class="collectScroll">
+        <view class="collentList" wx:for="{{myCollect}}">
+        <navigator url="../article/article?appId={{item.appId}}">
+            <image src="{{root}}{{item.logo}}" ></image>
+            <text>{{item.name}}</text>
+        </navigator>        
+        </view>
+     </scroll-view>  
+</view>

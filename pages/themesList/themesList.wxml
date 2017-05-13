@@ -1,0 +1,21 @@
+<!--pages/themesList/themesList.wxml-->
+<view class="themesList">
+<block wx:for="{{themesList}}">
+  <block wx:if="{{item.keyId != -1}}">
+    <navigator url="../theme/theme?id={{item.keyId}}" >
+        <view class="theme" >
+            <image src="{{root}}{{item.iconUrl}}"></image>
+            <view class="theme_intro">
+                <text class="theme_intro_tit">{{item.name}}</text>
+                <text class="theme_intro_content">{{item.description}}</text>
+            </view>
+        </view>
+    </navigator>
+  </block> 
+  <block wx:else>
+    <view class="articlePage">
+    {{item.title}}
+    </view>
+  </block> 
+</block>
+</view>

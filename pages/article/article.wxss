@@ -1,0 +1,87 @@
+/* pages/article/article.wxss */
+view{
+    line-height: 1.8em;
+}
+.wxParse-p{
+    margin-top: 10px;
+}
+
+.container{
+    height: 100%;
+}
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 5px 5px 5px;
+    text-align: center
+}
+.article_info{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 5px 5px 5px ;
+    background-color: gainsboro;
+}
+.articleContent{
+    padding: 0px 5px 5px 7px;
+    font-size: 15px;
+    color: #353535;
+    margin-top: 20px;
+}
+.bottom_bar{
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid #aaa;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 0px;
+}
+
+.bottom_bar image{
+    width: 20px;
+    height: 20px;
+    margin-top:10px;
+}
+.icon{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.meta{
+    padding-left: 5px;
+}
+.avatar{
+    width: 25px;
+    height: 25px;
+    margin-bottom: -3px;
+}
+.author{
+    font-size: 13px;
+    font-weight: bold;
+    color: #353535;
+    margin-left: 10px;
+}
+.bio{
+    font-size: 12px;
+    color: #888888;
+}
+
+.view-more{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.headline-background{
+    display: none; 
+}
+.content{
+    padding-bottom: 40px;
+}
+.content image{
+    width: 97%;
+}

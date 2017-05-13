@@ -1,0 +1,46 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/appList/appList",
+        "pages/user/user",        
+        "pages/theme/theme",
+        "pages/article/article",
+        "pages/themesList/themesList"
+        
+    ],
+    "tabBar": {
+      "selectedColor": "#03a9f4",
+      "borderStyle": "white",
+      "list": [
+          { 
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/index.png",
+        "selectedIconPath": "images/icon/index_select.png"
+      },{
+        "pagePath": "pages/themesList/themesList",
+        "text": "标签",
+        "iconPath": "images/icon/topic.png",
+        "selectedIconPath": "images/icon/topic_select.png"
+      },{
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/icon/user.png",
+        "selectedIconPath": "images/icon/user_select.png"
+      }
+      ]
+    },
+    "window": {
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#03a9f4",
+        "backgroundColor": "#efeff4"
+    },
+
+    "networkTimeout": {
+        "request": 10000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    },
+    "debug": true
+}
