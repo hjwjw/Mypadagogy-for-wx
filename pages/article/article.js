@@ -2,9 +2,9 @@
 
 var app = getApp();
 var WxParse = require('../../wxParse/wxParse.js');
-
 Page({
   data: {
+    root: app.globalData.myPadagogyApi,
     articleJson: null,
     zanIcon: {
       status: 0,

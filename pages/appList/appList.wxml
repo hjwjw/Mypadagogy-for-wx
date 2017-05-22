@@ -25,7 +25,13 @@
         <navigator url="../article/article?appId={{item.appId}}">
           <view class="hotList">
             <image src="{{root}}{{item.logo}}"></image>
-            <text>{{item.name}}</text>
+            <view class="tit_time">
+                <text>{{item.name}}</text>
+                <text style="font-size:11px;">
+                  <block wx:for="{{item.typeName}}" > {{item}}</block>
+                </text> 
+                <text style="font-size:11px">人气:{{item.count}}</text>
+              </view>
           </view>
         </navigator>
       </block>

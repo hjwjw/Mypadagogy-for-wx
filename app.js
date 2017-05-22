@@ -20,7 +20,7 @@ App({
     },
     globalData: {
         zhihuApiUrl: "https://news-at.zhihu.com/api/",
-        myPadagogyApi:"http://171y6504z5.iask.in/MyPadagogy/",
+        myPadagogyApi:"https://www.hjwei.top/MyPadagogy/",
         userInfo:null,
         collect:[],
     }
