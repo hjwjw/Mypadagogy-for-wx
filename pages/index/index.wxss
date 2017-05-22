@@ -40,22 +40,30 @@
 
 .hotList image{
     width:70px;
-    height:60px
+    height:60px;
+    flex-basis:20%;
 }
 .hotList text{
     width: 75%;
     font-size: 16px;
     color: #444;
 }
-
+.tit_time{
+    flex-basis: 50%;
+}
 .tit_time text{
   width: 100%;
   display: flex;
   flex-direction: row; 
   margin-bottom: 5px;
   margin-left: 20px;
-}
 
+}
+.detailbutton{
+  font-size: 12px;
+  flex-basis: 30%;
+  align-self: center
+}
 /*菜单*/
 .container {
   height: 100%;

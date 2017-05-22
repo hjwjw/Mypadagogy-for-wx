@@ -23,7 +23,19 @@
         <view class="collentList" wx:for="{{myCollect}}">
         <navigator url="../article/article?appId={{item.appId}}">
             <image src="{{root}}{{item.logo}}" ></image>
-            <text>{{item.name}}</text>
+            <view class="tit_time">
+              <text>{{item.name}}</text>
+              <text style="font-size:11px;">
+                <block wx:for="{{item.typeName}}" > {{item}}</block>
+              </text> 
+              <text style="font-size:11px">人气:{{item.count}}</text>
+            </view>
+              
+              <view class="detailbutton">
+              <navigator url="../article/article?appId={{item.appId}}">
+                  <button type="primary" size="mini" >查看介绍</button>  
+                </navigator>
+              </view>
         </navigator>        
         </view>
      </scroll-view>  

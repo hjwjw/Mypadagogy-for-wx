@@ -73,7 +73,7 @@
     color: #444;
     border: 1px solid #03a9f4;
     border-radius: 4px;
-    box-shadow: 1px 1px 2px #03a9f4;
+   
 }
 .collentList navigator{
     display: flex;
@@ -81,14 +81,30 @@
     flex-shrink: 0;
 }
 .collentList image{
-    width:60px;
-    height:50px
+    width:70px;
+    height:60px
 }
 .collentList text{
     width: 75%;
     font-size: 14px;
     margin-left: 10px;
     color: #444;    
+}
+.tit_time{
+    flex-basis: 45%;
+}
+.tit_time text{
+  width: 100%;
+  display: flex;
+  flex-direction: row; 
+  margin-bottom: 5px;
+  margin-left: 20px;
+
+}
+.detailbutton{
+  font-size: 10px;
+  flex-basis: 35%;
+  align-self: center
 }
 .collectScroll{
     height: 400px;

@@ -84,7 +84,10 @@ Page({
       var collectData = {
         name: res.currentTarget.dataset.articledata.name,
         appId: res.currentTarget.dataset.articledata.appId,
-        logo: res.currentTarget.dataset.articledata.logo
+        logo: res.currentTarget.dataset.articledata.logo,
+        count: res.currentTarget.dataset.articledata.count,
+        logo: res.currentTarget.dataset.articledata.logo,
+        typeName: res.currentTarget.dataset.articledata.typeName
       }
       var collectArray = [];
       if(wx.getStorageSync(res.currentTarget.dataset.id) == ''){

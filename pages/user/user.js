@@ -19,6 +19,8 @@ Page({
   onLoad: function (options) {
     var that = this;
     var collect = wx.getStorageSync('selections')
+    console.log('collect')
+    console.log(collect)
     that.setData({
       userInfo: app.globalData.userInfo,
       myCollect:collect

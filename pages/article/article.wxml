@@ -27,6 +27,9 @@
     </view>
 
     <view class="bottom_bar">
+      <view class="sharebutton">
+          <button type="primary" size="mini" open-type="share" plain="true">分享</button>
+      </view>  
         <view class="icon">
             <!--<image src="../../images/icon/comment.png"></image> -->
             <image src="../../images/icon/{{zanIcon.url}}" bindtap="zan" data-id="zan"></image>

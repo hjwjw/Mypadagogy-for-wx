@@ -47,12 +47,10 @@ Page({
         parentId:that.data.parentId
       },
       success:function(res){
-        console.log("res");
-        console.log(res);
         that.setData({
           nav:res.data
         });
-        console.log(that.data.nav);
+        
       },
     })
   },
