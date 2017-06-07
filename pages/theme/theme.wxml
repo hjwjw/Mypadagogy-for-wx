@@ -1,7 +1,7 @@
 <!--pages/theme/theme.wxml-->
 <view>
   <view class="indexList">
-    <block wx:for="{{appList}}">
+    <block wx:for="{{appList}}" wx:key="{{item.appId}}">
       <block wx:if="{{item.appId != -1}}">
         
           <view class="hotList">

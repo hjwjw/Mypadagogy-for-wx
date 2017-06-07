@@ -17,21 +17,17 @@ Page({
     that.setData({
       keyId: options.id
     })
-    console.log(options.id)
     wx.request({
       url: app.globalData.myPadagogyApi + 'appItemRest/queryByKey/' + that.data.keyId,
       method: 'GET',
       success: function(res){
-        console.log(res.data)
         var newStories=[];
         if (res.data.list.length == 0) {
           console.log("没有数据了")
-          console.log(that.data.appList)
           that.setData({
             appList:that.data.appList,
             isNull: true
           })
-          console.log("list is null");
         }else{
           that.setData({
             pageData: res.data,
@@ -72,14 +68,11 @@ Page({
         success: function (res) {
           if (res.data.list.length == 0) {
             console.log("没有数据了")
-            console.log(that.data.appList)
             that.setData({
               appList: that.data.appList,
               isNull: true
             })
           }else{
-            console.log("在这")
-            console.log(res)
             that.data.appList.push({
               appId: -1,
               title: '第' + (that.data.pageNum + 1) + '页'
@@ -87,17 +80,11 @@ Page({
             for (var i = 0; i < res.data.list.length; i++) {
               that.data.appList.push(res.data.list[i])
             }
-            console.log("appList")
-            console.log(that.data.appList)
             that.setData({
               pageData: res.data,
               pageNum: that.data.pageNum + 1,
               appList: that.data.appList
             })
-
-            console.log("下拉后")
-            console.log(that.data.appList)
-
           }
           
         },

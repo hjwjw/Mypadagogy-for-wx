@@ -22,7 +22,6 @@ Page({
       url: app.globalData.myPadagogyApi + 'appItemRest/queryById/' + options.appId,
       method: 'GET',
       success: function (res) {
-        console.log(res);
         that.setData({
           articleJson: res.data
         })
@@ -75,8 +74,6 @@ Page({
 
   },
   selections: function (res) {
-    console.log("收藏")
-    console.log(res)
     var that = this;
     //改变图标状态
     if (that.data.selIcon.status == 0) {
@@ -117,9 +114,7 @@ Page({
         }
       }
       wx.setStorageSync(res.currentTarget.dataset.id, newCollectData);
-      console.log("取消后")
-      console.log(wx.getStorageSync(res.currentTarget.dataset.id))
-      
+
       that.setData({
         selIcon: {
           status: 0,

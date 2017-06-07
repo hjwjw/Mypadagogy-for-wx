@@ -1,6 +1,6 @@
 <!--pages/themesList/themesList.wxml-->
 <view class="themesList">
-<block wx:for="{{themesList}}">
+<block wx:for="{{themesList}}" wx:key="{{item.keyId}}">
   <block wx:if="{{item.keyId != -1}}">
     <navigator url="../theme/theme?id={{item.keyId}}" >
         <view class="theme" >

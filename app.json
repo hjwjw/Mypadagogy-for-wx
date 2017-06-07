@@ -5,8 +5,7 @@
         "pages/user/user",        
         "pages/theme/theme",
         "pages/article/article",
-        "pages/themesList/themesList"
-        
+        "pages/themesList/themesList"  
     ],
     "tabBar": {
       "selectedColor": "#03a9f4",
@@ -42,5 +41,5 @@
         "uploadFile": 10000,
         "downloadFile": 10000
     },
-    "debug": true
+    "debug": false
 }

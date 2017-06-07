@@ -2,7 +2,7 @@
 <view class="container">
   <view class="page-bottom">
         <view class="page-content">
-            <view  class="wc" wx:for="{{nav}}">
+            <view  class="wc" wx:for="{{nav}}" wx:key="{{item.typeId}}">
                 <navigator url="../appList/appList?typeName={{item.name}}&typeId={{item.typeId}}">
                   <text>{{item.name}}</text>
                 </navigator>

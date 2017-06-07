@@ -12,13 +12,10 @@ Page({
       url: app.globalData.myPadagogyApi + 'keywordRest/queryAll',
       method: 'GET', 
       success: function(res){
-        console.log(res.data);
         that.setData({
           themesList:res.data.list,
           nextPage: res.data.nextPage
         });
-        console.log("nexpage")
-        console.log(that.data.nexPage)
       },
       fail: function() {
         console.log("数据拉取失败")
@@ -41,8 +38,6 @@ Page({
         },
         method: 'GET',
         success: function (res) {
-          console.log("在这")
-          console.log(res)
           that.data.themesList.push({
             keyId: -1,
             title: '第' + res.data.pageNum + '页'
@@ -50,14 +45,11 @@ Page({
           for (var i = 0; i < res.data.list.length; i++) {
             that.data.themesList.push(res.data.list[i])
           }
-          console.log("themesList")
-          console.log(that.data.themesList)
+
           that.setData({
             nextPage: res.data.nextPage,
             themesList: that.data.themesList
           })
-          console.log("下拉后")
-          console.log(that.data.themesList)
         },
         fail: function () {
           // fail

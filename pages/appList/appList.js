@@ -25,8 +25,6 @@ Page({
       method:'GET',
       async: false,
       success:function(res){
-        console.log("res");
-        console.log(res);
         that.setData({
           typeId: options.typeId,
           typeName: options.typeName,
@@ -49,12 +47,9 @@ Page({
         parentId: options.typeId
       },
       success: function (res) {
-        console.log("res");
-        console.log(res);
         that.setData({
           nav: res.data
         });
-        console.log(that.data.nav);
       },
     })
   },
